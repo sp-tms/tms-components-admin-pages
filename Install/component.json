@@ -1,0 +1,134 @@
+{
+	"name" : "Pages",
+	"route" : "pages",
+	"description" : "<p>Show pages content on tms apps</p>",
+	"module_type" : "components",
+	"app_type" : "tms",
+	"category" : "admin",
+	"version" : "0.0.0",
+	"repo" : "https://github.com/sp-tms/tms-components-admin-pages",
+	"class" : "Apps\\Tms\\Components\\Pages\\PagesComponent",
+	"dependencies" : 
+	{
+		"core" : 
+		{
+			"name" : "Core",
+			"version" : "0.0.0-rc.15",
+			"repo" : "https://github.com/sp-framework/core"
+		},
+		"apptype" : 
+		{
+			"name" : "Transport Management System",
+			"version" : "0.0.0",
+			"repo" : "https://github.com/sp-tms/tms"
+		},
+		"packages" : [],
+		"middlewares" : [],
+		"views" : [],
+		"externals" : 
+		{
+			"composer" : 
+			{
+				"require" : []
+			},
+			"config" : 
+			{
+				"allow-plugins" : []
+			},
+			"extra" : 
+			{
+				"patches" : []
+			}
+		}
+	},
+	"menu" : 
+	{
+		"pages" : 
+		{
+			"title" : "pages",
+			"icon" : "file-code",
+			"link" : "pages"
+		},
+		"seq" : "0"
+	},
+	"widgets" : 
+	[
+		{
+			"name" : "HTML Code",
+			"method" : "htmlCode",
+			"multiple" : true,
+			"max_multiple" : 20,
+			"settings" : 
+			{
+				"html_code" : "This is test html code!"
+			}
+		},
+		
+		{
+			"name" : "Carousel",
+			"method" : "carousel",
+			"multiple" : true,
+			"max_multiple" : 2,
+			"settings" : 
+			{
+				"slides" : 
+				[
+					{
+						"content" : "This is slide 1 content"
+					},
+					
+					{
+						"content" : "This is slide 2 content"
+					},
+					
+					{
+						"content" : "You can also call html widget content. getWidgetContent(x) - x is the widget ID."
+					}
+				],
+				"carousel_settings" : 
+				{
+					"border" : false,
+					"minHeight" : 100,
+					"fade" : false,
+					"showIndicators" : true,
+					"indicatorsColor" : "#000",
+					"showPrevNext" : true,
+					"prevNextColor" : "#000"
+				}
+			}
+		},
+		
+		{
+			"name" : "Accordion",
+			"method" : "accordion",
+			"multiple" : true,
+			"max_multiple" : 2,
+			"settings" : 
+			{
+				"accordions" : 
+				[
+					{
+						"title" : "This is first accordion title",
+						"content" : "This is first accordion content"
+					},
+					
+					{
+						"title" : "This is second accordion title",
+						"content" : "This is second accordion content"
+					},
+					
+					{
+						"title" : "You can also call html widget content",
+						"content" : "getWidgetContent(x) - x is the widget ID."
+					}
+				],
+				"accordion_settings" : 
+				{
+					"title" : "This is title. Can also be false for no title!"
+				}
+			}
+		}
+	],
+	"filters" : [],
+	"settings" : []
+}
