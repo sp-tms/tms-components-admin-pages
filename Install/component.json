@@ -24,7 +24,14 @@
 		},
 		"packages" : [],
 		"middlewares" : [],
-		"views" : [],
+		"views" : 
+		[
+			{
+				"name" : "Pages",
+				"version" : "0.8.0",
+				"repo" : "https://github.com/sp-tms/tms-views-admin-default-pages"
+			}
+		],
 		"externals" : 
 		{
 			"composer" : 
